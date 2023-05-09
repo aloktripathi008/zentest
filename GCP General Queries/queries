@@ -1,6 +1,6 @@
-<span style="color: green"> 
+
 1. Considering app engine and cloud run. If the application is required to be mult-regional
-which service would you recommend?. Explain why?</span>
+which service would you recommend?. Explain why?
 
 Ans: Both App Engine and Cloud Run are capable of deploying applications in a multi-regional manner. However, Cloud Run would be a better choice for applications that require multi-regional deployment.
 
