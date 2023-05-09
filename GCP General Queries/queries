@@ -1,0 +1,42 @@
+1. Considering app engine and cloud run. If the application is required to be mult-regional
+which service would you recommend?. Explain why?
+
+Ans: Both App Engine and Cloud Run are capable of deploying applications in a multi-regional manner. However, Cloud Run would be a better choice for applications that require multi-regional deployment.
+
+Here are a few reasons why:
+
+    Deployment flexibility: Cloud Run allows for more deployment flexibility than App Engine. With Cloud Run, you can deploy a containerized application from any Docker container image. This means that you can build and package your application using any programming language, framework, or tooling of your choice. App Engine, on the other hand, requires you to use one of the supported programming languages or frameworks.
+
+    Serverless architecture: Cloud Run is a serverless computing platform, meaning that you don't have to manage the underlying infrastructure or worry about scaling. Cloud Run automatically scales your application based on incoming requests, and you only pay for the resources you use. App Engine also offers automatic scaling, but it's not as fine-grained as Cloud Run.
+
+    Deployment speed: Cloud Run has a faster deployment speed compared to App Engine. With Cloud Run, you can deploy your application within seconds, while App Engine may take several minutes.
+
+    Regional availability: Both App Engine and Cloud Run offer multi-regional deployment options. However, Cloud Run has more regional availability compared to App Engine. Currently, Cloud Run is available in more regions than App Engine.
+
+In summary, if you need to deploy an application in a multi-regional manner and you want more deployment flexibility, a serverless architecture, fast deployment speed, and greater regional availability, then Cloud Run would be a better choice than App Engine.
+
+
+
+2. What is the recommended most secure way to connect to CloudSQL?
+ANS: `Cloud SQL Auth proxy`
+
+3. What are some challenges working with a Shared VPC?
+ANS: Some common challenges of working with a Shared VPC include:
+
+    Network security: When you are working with a Shared VPC, you need to ensure that the security of your network is maintained. You may need to implement additional security measures to restrict access to your resources and to protect your data.
+
+    Access control: In a Shared VPC environment, it can be challenging to manage access to resources across different projects. You may need to set up policies and roles to manage access to resources and to ensure that users only have access to the resources they need.
+
+    Network configuration: Shared VPCs can be complex to configure, and you may need to work with other teams to ensure that your network infrastructure is set up correctly. Additionally, if your network architecture is complex, it may be challenging to maintain and troubleshoot.
+
+    Performance: Shared VPCs can have a higher latency than non-shared VPCs, and you may need to implement additional measures to optimize performance, such as using caching or CDN services.
+
+    Integration with other services: If you are using other cloud services alongside your Shared VPC, you may need to ensure that they are compatible and integrate well with your network infrastructure. You may also need to configure routing and connectivity to ensure that traffic flows smoothly between different services.
+
+To address these challenges, it's important to have a clear understanding of your network infrastructure requirements and to work closely with other teams to ensure that your Shared VPC is configured correctly. Additionally, it's important to follow best practices for network security, access control, and performance optimization to ensure that your network infrastructure is reliable and secure.
+
+
+4. What GCP service would you use to provide WAF for a public endpoint?
+ANS: `Cloud Armor`
+
+
